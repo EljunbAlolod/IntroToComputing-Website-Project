@@ -1,0 +1,154 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background-color:#eee;
+  font-family:poppins,arial;
+}
+.back{
+  font-family:poppins;
+  font-weight:300;
+  text-shadow: 0 0 5px skyblue;   
+  color:white;
+  text-decoration:none;
+  margin-right: 20px;
+  position: relative;
+}
+.back:after{
+  content:'';
+  height:2px;
+  width: 0%;
+  background: white;
+  box-shadow: 0 0 5px skyblue;
+  bottom:0;
+  left:0;
+  position:absolute;
+  transition: 0.3s;
+}
+
+.back:hover:after{
+  width: 100%;
+}
+section{
+  display:flex;
+  justify-content:center;
+  margin-top:120px;
+ 
+
+}
+.container{
+  width:700px;
+ 
+}
+h1{
+  font-size: 50px;
+  text-shadow: 0 0 5px skyblue; 
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+h2{
+  font-family:poppins;
+  font-weight:400;
+  font-size:16px;
+  color:rgb(50,50,50);
+  text-align: center;
+}
+strong{
+  text-shadow: 0 0 5px skyblue; 
+  text-transform: uppercase;
+}
+.social-btn{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  
+}
+.logo-icon{
+  margin: 10px;
+  transition: 0.3s;
+}
+.logo-icon:hover {
+  opacity: 0.5;
+}
+.form-container{
+  display: flex;
+  justify-content: center;
+}
+.form-wrap{
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  border: grey solid 2px;
+  margin-left: 0;
+  margin-bottom: 100px;
+  padding: 10px;
+}
+
+h3{
+  margin: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.form-label{
+  font-family:poppins;
+  font-weight:400;
+  font-size:13px;
+  color:rgb(50,50,50);
+  
+}
+.input-bar{
+  border: 1px solid black;
+  font-family:poppins;
+  font-weight:400;
+  font-size:13px;
+  color:rgb(50,50,50);
+  padding: 5px 0px;
+}
+.submit-btn{
+  height: 30px;
+  width: 60px;
+  background-color: black;
+  border:solid 0;
+  font-weight:500;
+  font-size:13px;
+  color:white;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.submit-btn:hover{
+  opacity: 0.6;
+}
+
+#footer {
+  
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Poppins,Arial;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #979797;
+  padding: 20px 0;
+  pointer-events: none;
+  
+}
+
+@media (width < 930px){
+  section{
+    justify-content: left;
+    padding: 10px;
+  }
+  .container{
+    width: 100%;
+  }
+  .back{
+    display: none;
+
+  }
+}
